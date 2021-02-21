@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <h2>Entries</h2>
+
+    {#if entries.size > 0}
+    <ul>
+        {#for entry in entries}
+        <li>{entry.name} &nbsp;&nbsp;&nbsp; {entry.toDateStr} &nbsp;&nbsp;&nbsp; {entry.itemsAsStr}</li>
+        {/}
+    </ul>
+    {#else}
+    <p> No data found </p>
+    {/if}
+
+</body>
+
+</html>
